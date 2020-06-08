@@ -4,8 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      #modal::backdrop {
+        background-color: black;
+        opacity: 0.9;
+      }
+    </style>
   </head>
   <body>
-    <button>open</button>
+    <button onclick="modal.showModal()">open</button>
+
+    <dialog id="modal">
+      <p>hello</p>
+      <form method="dialog">
+        <button>close</button>
+      </form>
+    </dialog>
   </body>
 </html>
